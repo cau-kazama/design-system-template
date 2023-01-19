@@ -4,20 +4,23 @@ import createVariants from '../../utils/variantUtil';
 import { StyleProps } from './index';
 
 export const Button = styled.button<StyleProps>`
+    background-color: ${theme.color('secondary', 'light')};
     ${({ variant, size, borderRadius }) =>
         createVariants(
             {
                 variants: {
                     variant: {
                         filled: css`
-                            color: ${theme.color('primary', 'main')};
-                            background: ${theme.color('primary', 'main')};
-                            border: 1px solid ${theme.color('primary', 'main')};
+                            color: ${theme.color('secondary', 'main')};
+                            background: ${theme.color('secondary', 'main')};
+                            border: 1px solid
+                                ${theme.color('secondary', 'main')};
                         `,
                         outlined: css`
-                            color: ${theme.color('primary', 'main')};
+                            color: ${theme.color('secondary', 'main')};
                             background: transparent;
-                            border: 1px solid ${theme.color('primary', 'main')};
+                            border: 1px solid
+                                ${theme.color('secondary', 'main')};
                         `
                     },
                     size: {

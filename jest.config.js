@@ -12,6 +12,7 @@ module.exports = {
     // adicionar qualquer tipo de arquivo que deve ser testado nessa array (ou que não deve com !):
     collectCoverageFrom: [
         'src/**/*.tsx',
+        'src/utils/*.ts',
         '!src/**/*.test.tsx',
         '!src/**/test.tsx',
         '!src/pages/**/*.tsx',

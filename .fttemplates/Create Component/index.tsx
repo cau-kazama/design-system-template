@@ -1,14 +1,17 @@
 import React from 'react';
 import * as S from './styles';
-import StyledProps from './styles';
 
-interface ComponentsProps extends StyledProps {
+export interface StyleProps {
 }
 
-const <FTName>: React.FC<ComponentsProps> = ({...rest }) => {
+interface ComponentProps extends StyleProps {
+}
+
+const <FTName>: React.FC<ComponentProps> = ({}) => {
     return (
-        <S.Root {...rest}>
-        </S.Root>
+        <S.Button>
+
+        </S.Button>
     );
 };
 

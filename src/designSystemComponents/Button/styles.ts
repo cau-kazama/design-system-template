@@ -36,7 +36,7 @@ export const Button = styled.button<StyleProps>`
                     },
                     borderRadius: {
                         true: css`
-                            border-radius: theme.radii('sm');
+                            border-radius: ${theme.radii('sm')};
                         `
                     }
                 },

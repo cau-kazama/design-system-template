@@ -49,6 +49,15 @@
         ],
         "no-plusplus": "off",
         "no-unused-expressions": "off",
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+        "warn", // or "error"
+        {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "caughtErrorsIgnorePattern": "^_"
+        }
+        ]
     }
 }
